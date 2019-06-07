@@ -15,6 +15,8 @@
 		F4FDC7D622AA66A200F68F90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4FDC7D422AA66A200F68F90 /* LaunchScreen.storyboard */; };
 		F4FDC7E122AA66A200F68F90 /* LandmarksSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FDC7E022AA66A200F68F90 /* LandmarksSwiftUITests.swift */; };
 		F4FDC7EC22AA66A200F68F90 /* LandmarksSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FDC7EB22AA66A200F68F90 /* LandmarksSwiftUIUITests.swift */; };
+		F4FDC7FA22AA6D2A00F68F90 /* turtlerock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4FDC7F922AA6D2A00F68F90 /* turtlerock.jpg */; };
+		F4FDC7FC22AB03EC00F68F90 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FDC7FB22AB03EC00F68F90 /* CircleImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		F4FDC7E722AA66A200F68F90 /* LandmarksSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LandmarksSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4FDC7EB22AA66A200F68F90 /* LandmarksSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksSwiftUIUITests.swift; sourceTree = "<group>"; };
 		F4FDC7ED22AA66A200F68F90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4FDC7F922AA6D2A00F68F90 /* turtlerock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = turtlerock.jpg; sourceTree = "<group>"; };
+		F4FDC7FB22AB03EC00F68F90 /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				F4FDC7CB22AA66A100F68F90 /* SceneDelegate.swift */,
 				F4FDC7CD22AA66A100F68F90 /* ContentView.swift */,
 				F4FDC7CF22AA66A200F68F90 /* Assets.xcassets */,
+				F4FDC7FB22AB03EC00F68F90 /* CircleImageView.swift */,
+				F4FDC7F922AA6D2A00F68F90 /* turtlerock.jpg */,
 				F4FDC7D422AA66A200F68F90 /* LaunchScreen.storyboard */,
 				F4FDC7D722AA66A200F68F90 /* Info.plist */,
 				F4FDC7D122AA66A200F68F90 /* Preview Content */,
@@ -240,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4FDC7FA22AA6D2A00F68F90 /* turtlerock.jpg in Resources */,
 				F4FDC7D622AA66A200F68F90 /* LaunchScreen.storyboard in Resources */,
 				F4FDC7D322AA66A200F68F90 /* Preview Assets.xcassets in Resources */,
 				F4FDC7D022AA66A200F68F90 /* Assets.xcassets in Resources */,
@@ -268,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4FDC7CA22AA66A100F68F90 /* AppDelegate.swift in Sources */,
+				F4FDC7FC22AB03EC00F68F90 /* CircleImageView.swift in Sources */,
 				F4FDC7CC22AA66A100F68F90 /* SceneDelegate.swift in Sources */,
 				F4FDC7CE22AA66A100F68F90 /* ContentView.swift in Sources */,
 			);
