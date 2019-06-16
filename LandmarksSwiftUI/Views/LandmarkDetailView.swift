@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  LandmarkDetailView.swift
 //  LandmarksSwiftUI
 //
 //  Created by Marquis Dennis on 6/6/19.
@@ -8,32 +8,34 @@
 
 import SwiftUI
 
-struct ContentView : View {
+struct LandmarkDetailView : View {
+    var landmark: Landmark
+    
     var body: some View {
         VStack {
-            MapView()
+            MapView(coordinate: landmark.locationCoordinate)
                 .edgesIgnoringSafeArea(.top)
                 .frame(height: 300)
             
-            CircleImageView()
+            CircleImageView(image: landmark.image(forSize: 250))
                 .offset(y: -130)
                 .padding(.bottom, -130)
             
             VStack(alignment: .leading) {
-                Text("Turtle Rock")
+                Text(landmark.name)
                     .font(.title)
                 HStack {
-                    Text("Joshua Tree National Park")
+                    Text(landmark.park)
                         .font(.subheadline)
                     Spacer()
-                    Text("California")
+                    Text(landmark.state)
                         .font(.subheadline)
                 }
             }
             .padding()
             
             Spacer()
-        }
+        }.navigationBarTitle(Text(landmark.name), displayMode: .inline)
     }
 }
 
@@ -41,10 +43,8 @@ struct ContentView : View {
 struct ContentView_Previews : PreviewProvider {
     static var previews: some View {
         Group {
-            ContentView()
-                .environment(\.sizeCategory, .extraLarge)
+            LandmarkDetailView(landmark: landmarkData[0])
         }
-        
     }
 }
 #endif

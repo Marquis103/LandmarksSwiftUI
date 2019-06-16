@@ -12,13 +12,13 @@ import MapKit
 struct MapView : View, UIViewRepresentable {
     /// The type of `UIView` to be presented.
     typealias UIViewType = MKMapView
+    var coordinate: CLLocationCoordinate2D
     
     func makeUIView(context: Context) -> MapView.UIViewType {
         MKMapView(frame: .zero)
     }
     
     func updateUIView(_ uiView: MapView.UIViewType, context: UIViewRepresentableContext<MapView>) {
-        let coordinate = CLLocationCoordinate2D(latitude: 34.011286, longitude: -116.166868)
         let span = MKCoordinateSpan(latitudeDelta: 2.0, longitudeDelta: 2.0)
         let region = MKCoordinateRegion(center: coordinate, span: span)
         uiView.setRegion(region, animated: true)
@@ -28,7 +28,7 @@ struct MapView : View, UIViewRepresentable {
 #if DEBUG
 struct MapView_Previews : PreviewProvider {
     static var previews: some View {
-        MapView()
+        MapView(coordinate: landmarkData[0].locationCoordinate)
     }
 }
 #endif
